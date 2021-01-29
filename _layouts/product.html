@@ -11,7 +11,7 @@ layout: default
 					{{ page.description_markdown | markdownify }}
 
 					<h4>${{ page.price }}</h4>
-					<a href="{{ page.afflink }}">Get Price</a>
+					<a href="{{ page.afflink | markdownify}}">Get Price</a>
 					<div class="button">{% include snipcart-button.html product=page %}</div>
 				</div>
 			</div>
